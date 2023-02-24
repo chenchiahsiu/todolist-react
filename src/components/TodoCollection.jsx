@@ -17,6 +17,7 @@ const TodoCollection = ({
             key={todos.id}
             onToggleDone={(id) => onToggleDone?.(id)}
             OnChangeMode={({ id, isEdit }) => OnChangeMode?.({ id, isEdit })}
+            onDelete={(id) => onDelete?.(id)}
           />
         );
       })}
